@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Runner Web Solutions</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Enlace a estilos personalizados si deseas -->
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <!-- Barra de navegación de ejemplo -->
+    <header>
+        <div class="row">
+            <!-- ESPACIO -->
+            <div class="col-1"></div>
+
+            <!-- CONTENEDOR -->
+            <div class="col-10">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <!-- LOGO -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo.png" alt="Pixel Runner Web Solutions">
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="">
+                                <a class="" href="#">Inicio</a>
+                            </li>
+                            <li class="ms-md-5 ms-0">
+                                <a class="" href="#servicios">Servicios</a>
+                            </li>
+                            <li class="ms-md-5 ms-0">
+                                <a class="" href="#servicios">Proyectos</a>
+                            </li>
+                            <li class="ms-md-5 ms-0">
+                                <a class="" href="#">Blog</a>
+                            </li>
+                            <li class="ms-md-5 ms-0">
+                                <a class="" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- ESPACIO -->
+            <div class="col-1"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- BANNERS -->
+        <section class="banners">
+           <div class="contenedor">
+                <div id="CarouselSlider" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <!-- BANNERS -->
+                    <div class="carousel-inner" id="banners">
+
+                        <!-- BANNER 1 -->
+                        <div class="carousel-item banner active" data-bs-interval="6000"> <!-- NOTA - 1000 = 1  segundo -->
+                            <!-- IMG -->
+                             <img src="assets/img/banner-01.png" class="d-md-block d-none w-100" alt="Carousel One">
+
+                            <!-- TEXTO -->
+                            <div class="row text-center">
+                                <div class="carousel-caption banner-texto text-white text-center">
+                                    <h2 class="">Impulsando tu presencia digital con diseño innovador y tecnología de vanguardia</h2>
+                                    <p>Webs modernas, responsivas y conectadas al mercado</p>
+
+                                    <!-- CTA -->
+                                    <a href="" class="btn btn-banner">Conoce más</a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="servicios">
+            <div class="espacio-top" id="servicios"></div>
+
+            <div class="row">
+                <!-- ESPACIO -->
+                <div class="col-1">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                </div>
+
+                <!-- CONTENEDOR -->
+                <div class="col-10">
+                    <div class="titulo">
+                        <h2>Nuestros servicios</h2>
+                    </div>
+
+                    <div id="carouselExampleAutoplaying" class="carousel slide mt-5" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="servicios-cards">
+                                    <div class="row">
+                                        <div class="col-4 cont-cards">
+                                            <div class="card shadow-lg">
+                                              <img src="assets/img/iconos/icon-01.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h3>Sitios Informativos para Productos</h3>
+                                              </div>
+
+                                              <a type="button" class="btn btn-servicios" id="serv-01">Saber más</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 cont-cards">
+                                            <div class="card shadow-lg">
+                                              <img src="assets/img/iconos/icon-02.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h3>Integración con Marketplaces</h3>
+                                              </div>
+
+                                              <a type="button" class="btn btn-servicios" id="serv-02">Saber más</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 cont-cards">
+                                            <div class="card shadow-lg">
+                                              <img src="assets/img/iconos/icon-03.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h3>Desarrollo para Pequeños Negocios</h3>
+                                              </div>
+
+                                              <a type="button" class="btn btn-servicios" id="serv-03">Saber más</a>
+                                            </div>
+                                        </div>               
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="servicios-cards">
+                                    <div class="row">
+                                        <div class="col-md-4 cont-cards">
+                                            <div class="card shadow-lg">
+                                              <img src="assets/img/iconos/icon-04.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h3>Optimización SEO para sitios web</h3>
+                                              </div>
+
+                                              <a type="button" class="btn btn-servicios" id="serv-04">Saber más</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 cont-cards">
+                                            <div class="card shadow-lg">
+                                              <img src="assets/img/iconos/icon-05.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h3>Mantenimiento y Actualización</h3>
+                                              </div>
+
+                                              <a type="button" class="btn btn-servicios" id="serv-05">Saber más</a>
+                                            </div>
+                                        </div>              
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ESPACIO -->
+                <div class="col-1">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
+            </div>
+
+            <div class="espacio-bottom"></div>
+        </section>    
+    </main>
+
+    <!-- MODALES -->
+    <!-- SERVICIO 01 -->
+    <div id="servicio-01" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-11">
+                        <h3>Sitios Informativos para Productos</h3>
+                    </div>
+
+                    <div class="col-1">
+                        <span class="close">&times;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <p>Ofrecemos el desarrollo de sitios informativos que combinan diseño atractivo y contenido educativo para resaltar las características y beneficios de tus productos. Nuestras páginas son responsivas y están optimizadas para SEO, lo que mejora su visibilidad y facilita la compra a través de enlaces a marketplaces. Este enfoque no solo aumenta la confianza del cliente, sino que también mejora la tasa de conversión y te diferencia de la competencia.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICIO 02 -->
+    <div id="servicio-02" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-11">
+                        <h3>Integración con Marketplaces</h3>
+                    </div>
+
+                    <div class="col-1">
+                        <span class="close-02">&times;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <p>Ofrecemos un servicio de integración con marketplaces que permite a tu negocio conectar fácilmente su catálogo de productos a plataformas de venta como Amazon, eBay y Etsy. Nuestra solución incluye la configuración de enlaces directos y la optimización de listados, garantizando que tus productos sean fácilmente accesibles para los consumidores. Con esta integración, no solo amplías tu alcance y visibilidad en el mercado, sino que también mejoras la experiencia del cliente al facilitar un proceso de compra fluido y eficiente.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICIO 03 -->
+    <div id="servicio-03" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-11">
+                        <h3>Desarrollo para Pequeños Negocios</h3>
+                    </div>
+
+                    <div class="col-1">
+                        <span class="close-03">&times;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <p>Ofrecemos servicios de desarrollo web personalizados para pequeños negocios que buscan establecer una presencia en línea efectiva. Creamos sitios web responsivos y atractivos que destacan tus productos y servicios, optimizados para SEO para atraer más clientes. Además, proporcionamos integración con marketplaces y herramientas de análisis para ayudarte a comprender mejor el comportamiento de tus clientes, lo que permite un crecimiento sostenible y una mayor visibilidad en el mercado.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICIO 04 -->
+    <div id="servicio-04" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-11">
+                        <h3>Optimización SEO</h3>
+                    </div>
+
+                    <div class="col-1">
+                        <span class="close-04">&times;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <p>Ofrecemos servicios de optimización SEO para mejorar la visibilidad de tu sitio web en los motores de búsqueda, ayudando a atraer tráfico orgánico de calidad. Nuestro enfoque incluye el análisis de palabras clave, la optimización de contenido, la mejora de la estructura del sitio y la creación de enlaces estratégicos. Con nuestras estrategias personalizadas, buscamos aumentar tu posición en los resultados de búsqueda, lo que se traduce en un mayor número de visitantes y, en última instancia, más conversiones para tu negocio.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICIO 05 -->
+    <div id="servicio-05" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="row">
+                    <div class="col-11">
+                        <h3>Mantenimiento y Actualización</h3>
+                    </div>
+
+                    <div class="col-1">
+                        <span class="close-05">&times;</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <p>Ofrecemos un servicio integral de mantenimiento y actualización para garantizar que tu sitio web funcione de manera óptima y esté siempre al día con las últimas tendencias y tecnologías. Esto incluye la supervisión del rendimiento, la corrección de errores, la actualización de contenido y la verificación de enlaces, así como la implementación de mejoras de seguridad. Con nuestro servicio, aseguramos que tu sitio siga siendo atractivo y funcional, proporcionando a tus usuarios una experiencia fluida y satisfactoria.</p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Enlace a Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Get the modal
+var modal = document.getElementById("servicio-01");
+
+// Get the button that opens the modal
+var btn = document.getElementById("serv-01");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<script>
+// Get the modal
+var modal_02 = document.getElementById("servicio-02");
+
+// Get the button that opens the modal
+var btn_02 = document.getElementById("serv-02");
+
+// Get the <span> element that closes the modal
+var span_02 = document.getElementsByClassName("close-02")[0];
+
+// When the user clicks the button, open the modal 
+btn_02.onclick = function() {
+  modal_02.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span_02.onclick = function() {
+  modal_02.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal_02) {
+    modal_02.style.display = "none";
+  }
+}
+</script>
+
+<script>
+// Get the modal
+var modal_03 = document.getElementById("servicio-03");
+
+// Get the button that opens the modal
+var btn_03 = document.getElementById("serv-03");
+
+// Get the <span> element that closes the modal
+var span_03 = document.getElementsByClassName("close-03")[0];
+
+// When the user clicks the button, open the modal 
+btn_03.onclick = function() {
+  modal_03.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span_03.onclick = function() {
+  modal_03.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal_03) {
+    modal_03.style.display = "none";
+  }
+}
+</script>
+
+<script>
+// Get the modal
+var modal_04 = document.getElementById("servicio-04");
+
+// Get the button that opens the modal
+var btn_04 = document.getElementById("serv-04");
+
+// Get the <span> element that closes the modal
+var span_04 = document.getElementsByClassName("close-04")[0];
+
+// When the user clicks the button, open the modal 
+btn_04.onclick = function() {
+  modal_04.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span_04.onclick = function() {
+  modal_04.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal_04) {
+    modal_04.style.display = "none";
+  }
+}
+</script>
+
+<script>
+// Get the modal
+var modal_05 = document.getElementById("servicio-05");
+
+// Get the button that opens the modal
+var btn_05 = document.getElementById("serv-05");
+
+// Get the <span> element that closes the modal
+var span_05 = document.getElementsByClassName("close-05")[0];
+
+// When the user clicks the button, open the modal 
+btn_05.onclick = function() {
+  modal_05.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span_05.onclick = function() {
+  modal_05.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal_05) {
+    modal_05.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

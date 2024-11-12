@@ -1,0 +1,286 @@
+/* COLORES */
+:root{
+	--cian:#00FFFF;
+	--morado: #D800FF;
+	--verde:#00FF7F;
+}
+
+/* FUENTES */
+@font-face {
+  font-family: 'Principal';
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Secundaria';
+  src: url('../fonts/Roboto-Light.ttf');
+}
+
+/* BOTONES */
+.btn-banner{
+	background-color: var(--morado);
+	border:1px solid var(--morado);
+	color:white;
+	margin-top: 1.5rem;
+	width: 30%;
+	transition: .5s;
+	font-family: Principal;
+	text-transform: uppercase;
+}
+.btn-banner:hover{
+	background-color: transparent;
+	color:var(--morado);
+	border:1px solid var(--morado);
+}
+.btn-servicios{
+	background-color: var(--morado);
+	border:1px solid var(--morado);
+	color:white;
+	margin-top: 1.5rem;
+	width: 80%;
+	transition: .5s;
+	font-family: Principal;
+	text-transform: uppercase;
+}
+.btn-servicios:hover{
+	background-color: transparent;
+	color:var(--morado);
+	border:1px solid var(--morado);
+}
+
+/* ESPACIO */
+.espacio-top, .espacio-bottom{
+	padding-bottom: 6rem;
+}
+
+body{
+	width: 100%;
+	position: relative;
+	font-family: Secundaria;
+}
+
+/* HEADER */
+header{
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+header .navbar-brand img{
+	width: 10%;
+	height: auto;
+}
+header .navbar-nav li a{
+	display: block;
+  	padding: 0rem;
+  	font-size: 1rem;
+  	color: white;
+  	text-decoration: none;
+  	font-family: Principal;
+  	transition: .5s;
+}
+header .navbar-nav li a:hover{
+	color:var(--morado);
+}
+
+/* BANNERS */
+.banners{
+	padding-top: 5%;
+}
+.banner-texto{
+  left:42%;
+  width: 50%;
+  height: 100%;
+  animation-delay: 5s;
+  animation: letrasDerecha 2s;
+  padding: 0rem;
+  text-align: right !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin-top: 5%;
+}
+@keyframes letrasDerecha{
+  from{
+    margin-left: 50%;
+  }
+  to{
+    margin-left:0%;
+  }
+}
+.banner-texto h2{
+	margin:0rem;
+	font-family: Principal;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	color:var(--cian);
+}
+.banner-texto p{
+	margin-top:1.5rem;
+	font-family:Secundaria;
+	font-size: 1.5rem;
+}
+.carousel-caption{
+	bottom: 0rem;
+}
+
+/* SERVICIOS */
+.servicios{
+	background-color: #0C0C0C;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.servicios .titulo{
+	text-align: center;
+}
+.servicios .titulo h2{
+	color:var(--cian);
+	font-size: 2rem;
+	font-family: Principal;
+	text-transform: uppercase;
+}
+.servicios .servicios-cards .row{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.servicios .servicios-cards .row .cont-cards{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.servicios .servicios-cards .row .cont-cards .card{
+	width: 85%;
+	background-color: black;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+}
+.servicios .servicios-cards .row .cont-cards .card .card-body{
+	padding: 0rem;
+}
+.servicios .servicios-cards .row .cont-cards .card h3{
+	color:var(--cian);
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-family: Principal;
+	margin-bottom: 0rem;
+	padding: 0rem;
+	margin-top: 1.5rem;
+}
+.servicios .servicios-cards .row .cont-cards .card img{
+	width: 25%;
+	height: auto;
+	text-align: center;
+}
+.carousel-control-next-icon{
+	margin-top: 35%;
+	background-image: url(../img/right.png);
+}
+.carousel-control-prev-icon{
+	margin-top: 35%;
+	background-image: url(../img/left.png);
+}
+
+/* MODAL */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #0C0C0C;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #0C0C0C;
+  width: 65%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close, .close-02 {
+  color: white;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: .5s;
+}
+.close:hover{
+	opacity: .5;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-header {
+  padding: 1rem;
+  background-color: var(--morado);
+  color: white;
+  border-bottom: none;
+  text-transform: uppercase;
+}
+.modal-header .row{
+	width: 100%;
+}
+.modal-header .row span{
+	font-size: 2rem;
+	cursor: pointer;
+	transition: .5s;
+}
+.modal-header .row span:hover{
+	opacity:.5;
+}
+.modal-header .row .col-11{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+.modal-header .row .col-1{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+.modal-header h3{
+	font-family: Principal;
+	margin-bottom: 0rem;
+}
+.modal-body {
+	padding: 2rem;
+}
+.modal-body p{
+	color:white;
+	text-align: justify;
+	font-size: 1rem;
+	margin-bottom: 0rem;
+}
+
