@@ -33,13 +33,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="">
-                                <a class="" href="#">Inicio</a>
+                                <a class="" href="index.html">Inicio</a>
                             </li>
                             <li class="ms-md-5 ms-0">
                                 <a class="" href="#servicios">Servicios</a>
                             </li>
                             <li class="ms-md-5 ms-0">
-                                <a class="" href="#servicios">Proyectos</a>
+                                <a class="" href="#proyectos">Proyectos</a>
                             </li>
                             <li class="ms-md-5 ms-0">
                                 <a class="" href="#">Blog</a>
@@ -187,7 +187,136 @@
             </div>
 
             <div class="espacio-bottom"></div>
-        </section>    
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="proyectos">
+            <div class="espacio-top" id="proyectos"></div>
+            <div class="row">
+                <!-- ESPACIO -->
+                <div class="col-1"></div>
+
+                <!-- CONTENEDOR -->
+                <div class="col-10">
+                    <div class="titulo">
+                        <h2>Proyectos</h2>
+                    </div>
+
+                    <div class="contenedor">
+                        <div>
+                            <div class="categorias mt-5" id="categorias">
+                                <a href="#" class="activo">Todos</a>
+                                <a href="#" class="ms-4">Proyectos finalizados</a>
+                                <a href="#" class="ms-4">Proyectos con Bootstrap</a>
+                                <a href="#" class="ms-4">Proyectos desde cero</a>
+                            </div>
+                        </div>
+
+                        <div class="grid mt-4" id="grid">
+                            <!-- PROYECTO -->
+                            <div class="item shadow-lg" data-categoria="proyectosfinalizados">
+                                <div class="item-contenido contenedor-hover">
+                                    <img src="assets/img/proyectos/web-08.webp" alt="" class="imagen-hover">
+
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p>Proyecto hecho a la medida</p>
+
+                                            <a href="https://ductytubos.com.mx/" target="_blank" type="button" class="btn btn-proyecto" id="serv-01">Visia la web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO -->
+                            <div class="item" data-categoria="proyectosconbootstrap">
+                                <div class="item-contenido contenedor-hover">
+                                    <img src="assets/img/proyectos/web-09.webp" alt="" class="imagen-hover">
+
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p>Proyecto hecho con Bootstrap<br>de 4 pantallas</p>
+
+                                            <a href="https://fernandojuarez24.github.io/AdrianaJuarez2.0/" target="_blank" type="button" class="btn btn-proyecto" id="serv-01">Visia la web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO -->
+                            <div class="item" data-categoria="proyectosconbootstrap">
+                                <div class="item-contenido contenedor-hover">
+                                    <img src="assets/img/proyectos/web-07.webp" alt="" class="imagen-hover">
+
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p>Proyecto hecho con Bootstrap<br>de 4 pantallas</p>
+
+                                            <a href="https://fernandojuarez24.github.io/LaGuitarraDeLolo/" target="_blank" type="button" class="btn btn-proyecto" id="serv-01">Visia la web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO -->
+                            <div class="item" data-categoria="proyectosconbootstrap">
+                                <div class="item-contenido contenedor-hover">
+                                    <img src="assets/img/proyectos/web-06.webp" alt="" class="imagen-hover">
+
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <p>Landing page hecha con Bootstrap</p>
+
+                                            <a href="https://fernandojuarez24.github.io/CosplayGirl/" target="_blank" type="button" class="btn btn-proyecto" id="serv-01">Visia la web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO -->
+                            <div class="item" data-categoria="proyectosdesdecero">
+                                <div class="item-contenido">
+                                    <img src="assets/img/proyectos/web-05.webp" alt="">
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO -->
+                            <div class="item" data-categoria="proyectosdesdecero">
+                                <div class="item-contenido">
+                                    <img src="assets/img/proyectos/web-04.webp" alt="">
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO -->
+                            <div class="item" data-categoria="proyectosdesdecero">
+                                <div class="item-contenido">
+                                    <img src="assets/img/proyectos/web-03.webp" alt="">
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO -->
+                            <div class="item" data-categoria="proyectosdesdecero">
+                                <div class="item-contenido">
+                                    <img src="assets/img/proyectos/web-02.webp" alt="">
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO -->
+                            <div class="item" data-categoria="proyectosdesdecero">
+                                <div class="item-contenido">
+                                    <img src="assets/img/proyectos/web-01.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ESPACIO -->
+                <div class="col-1"></div>
+            </div>
+            <div class="espacio-bottom"></div>
+        </section>
+        <!-- PROYECTOS --> 
     </main>
 
     <!-- MODALES -->
@@ -449,6 +578,50 @@ window.onclick = function(event) {
   }
 }
 </script>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      // Calcula la distancia al objetivo desde la parte superior
+      const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      const startPosition = window.pageYOffset;
+      const distance = targetPosition - startPosition;
+      const duration = 800; // Duración del scroll en milisegundos
+      let start = null;
+
+      // Función de animación
+      function smoothScroll(currentTime) {
+        if (!start) start = currentTime;
+        const timeElapsed = currentTime - start;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(smoothScroll);
+      }
+
+      // Función de suavizado (usando una función "ease-in-out")
+      function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      }
+
+      requestAnimationFrame(smoothScroll);
+    }
+  });
+});
+
+</script>
+
+<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+<script src="assets/js/proyectos.js"></script>
 
 </body>
 </html>

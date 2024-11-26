@@ -46,6 +46,22 @@
 	color:var(--morado);
 	border:1px solid var(--morado);
 }
+.btn-proyecto{
+	background-color: var(--morado);
+	border:1px solid var(--morado);
+	color:white;
+	margin-top: 1.1rem;
+	width: 40%;
+	transition: .5s;
+	font-family: Principal;
+	text-transform: uppercase;
+	font-size: .8rem;
+}
+.btn-proyecto:hover{
+	background-color: transparent;
+	color:var(--morado);
+	border:1px solid var(--morado);
+}
 
 /* ESPACIO */
 .espacio-top, .espacio-bottom{
@@ -283,4 +299,118 @@ header .navbar-nav li a:hover{
 	font-size: 1rem;
 	margin-bottom: 0rem;
 }
+
+/* PROYECTOS */
+.proyectos{
+	background-color: black;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.proyectos .titulo{
+	text-align: center;
+}
+.proyectos .titulo h2{
+	color:var(--cian);
+	font-size: 2rem;
+	font-family: Principal;
+	text-transform: uppercase;
+}
+.proyectos .categorias {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.proyectos .categorias a {
+	color: var(--morado);
+	font-size: 1rem;
+	font-family: Principal;
+	transition: .5s;
+	text-decoration: none;
+}
+.proyectos .categorias a:hover,
+.proyectos .categorias a.activo {
+	color:var(--cian);
+}
+
+/* ------------------------- */
+/* Grid */
+/* ------------------------- */
+
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+	opacity: 1;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+.contenedor-hover {
+  position: relative;
+  width: 100%;
+}
+
+.imagen-hover {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #0C0C0C;
+}
+
+.contenedor-hover:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  font-size: 1.1rem;
+  width: 100%;
+  position: absolute;
+  padding: 1.5rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text p{
+	margin: 0rem;
+	font-family: Principal;
+}
+
 
